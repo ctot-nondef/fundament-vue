@@ -1,9 +1,11 @@
 <template>
-  <FundamentNav></FundamentNav>
-  <main>
-    <router-view name="Content"></router-view>
-  </main>
-  <FundamentFooter></FundamentFooter>
+  <div class="">
+    <FundamentNav></FundamentNav>
+    <main>
+      <router-view name="Content"></router-view>
+    </main>
+    <FundamentFooter></FundamentFooter>
+  </div>
 </template>
 
 <script>
@@ -12,7 +14,7 @@
 
   export default {
     components: {
-    	FundamentNav,
+      FundamentNav,
       FundamentFooter,
     },
     data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
