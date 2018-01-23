@@ -7,13 +7,13 @@ import BootstrapVue from 'bootstrap-vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}
 {{#router}}
 import { sync } from 'vuex-router-sync'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
-import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import 'bootstrap-vue/dist/bootstrap-vue.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import store from './store/index';
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
-import "./static/fundament.css"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-import "bootstrap-vue/dist/bootstrap-vue.css"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import './assets/fundament.css'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
 
 Vue.use(BootstrapVue){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}

@@ -7,10 +7,14 @@
 </template>
 
 <script>
-  import FundamentNav from './FundamentNav.vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-  import FundamentFooter from './FundamentFooter.vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  import FundamentNav from './FundamentNav'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  import FundamentFooter from './FundamentFooter'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
   export default {
+    components: {
+    	FundamentNav,
+      FundamentFooter,
+    },
     data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
       return {
       }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
