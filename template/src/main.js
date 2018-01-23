@@ -12,7 +12,7 @@ import store from './store/index';
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
-import "./css/fundament.css"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import "./static/fundament.css"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import "bootstrap-vue/dist/bootstrap-vue.css"{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 Vue.use(BootstrapVue){{#if_eq lintConfig "airbnb"}};{{/if_eq}}

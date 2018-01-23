@@ -40,12 +40,12 @@
       <div class="acdh-nav-brand">
         <p>A Service of Austrian Centre for Digital Humanities</p>
         <a href="https://www.oeaw.ac.at/acdh/acdh-home/" target="_blank" rel="noopener" aria-label="ACDH">
-          <img src="../assets/images/acdh_logo120h.png" alt="ACDH" title="Austrian Center for Digital Humanities">
+          <img src="/static/acdh_logo120h.png" alt="ACDH" title="Austrian Center for Digital Humanities">
         </a>
       </div>
       <div class="oeaw-nav-brand">
         <a href="https://www.oeaw.ac.at" target="_blank" rel="noopener" aria-label="ÖAW">
-          <img src="../assets/images/oeaw_logo.png" alt="ÖAW" title="Österreichische Akademie der Wissenschaften">
+          <img src="/static/oeaw_logo.png" alt="ÖAW" title="Österreichische Akademie der Wissenschaften">
         </a>
       </div>
     </div>
@@ -54,7 +54,6 @@
 </template>
 
 <script>
-
   export default {
     data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
       return {
